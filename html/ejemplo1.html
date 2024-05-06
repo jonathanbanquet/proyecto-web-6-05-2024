@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="../js/nodo.js"></script>
+    <script>
+     function saludar(){
+
+        alert("Hola")
+
+     }
+
+    
+    </script>
+
+</head>
+<body>
+    <button onclick="crearUI()">Presioname</button>
+    <script>
+   
+       function crearUI(){
+     var h1 = crearNodoConTexto('h1','Este es un ejemplo de Java')
+     var p = crearNodoConTexto('p','Este es una funcion para crear un texto')
+     p.style.color = 'red'
+    var imagen =  crearNodoImagen('imagen.jpg.png', 'cielo')
+
+    var ol = crearNodo('ol')
+    var liUno = crearNodoConTexto('li', 'Apple')
+    var liDos = crearNodoConTexto('li', 'PineApples')
+    var liTres= crearNodoConTexto('li', 'OrangeApple')
+
+        adicionarNodoABody(h1)
+        adicionarNodoABody(p)
+        adicionarNodoABody(imagen)
+        adicionarNodoAContenedor(liUno,ol)
+        adicionarNodoAContenedor(liDos,ol)
+        adicionarNodoAContenedor(liTres,ol)
+        adicionarNodoABody(ol)
+        liUno.setAttribute("class", "tipoLetra")
+
+
+       
+
+/*
+        function crearUI(){
+            var h1 = document.createElement('h1')
+            var textoH1 = document.createTextNode('Ejemplo Javascript')
+            h1.appendChild(textoH1)
+            document.body.appendChild(h1)
+
+            var p = document.createElement('p')
+            var textop = document.createTextNode('Un elefante se balanceaba sobre la tela de una araña')
+            p.appendChild(textop)
+            document.body.appendChild(p)
+            
+
+        }
+    
+*/
+    }    
+</script>
+</body>
+</html>
+

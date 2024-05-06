@@ -1,0 +1,14 @@
+.flexContenedor{
+display: flex;
+
+}
+.divContenedor{
+width: 50%;
+
+}
+.tabla{
+
+width: 100px;
+border: 1px solid black;
+
+}
